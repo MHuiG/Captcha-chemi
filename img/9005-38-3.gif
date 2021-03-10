@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+    <title>
+        Untitled Page
+    </title>
+    <meta property="qc:admins" content="361527750463055131427736375" />
+    <link href="/CSS/index_layout.css" type="text/css" rel="stylesheet" />
+    <link href="/CSS/index_global.css" type="text/css" rel="stylesheet" />
+    <link href="/CSS/index_link.css" type="text/css" rel="stylesheet" />
+    <link href="/main.css" type="text/css" rel="stylesheet" />
+    <link href="/UserManager/Themes/Red/Default.css" rel="stylesheet" />
+    <link href="/UserManager/Themes/Red/web1.css" rel="stylesheet" />
+    <link href="/UserManager/Themes/Red/web.css" rel="stylesheet" />
+    <link href="/UserManager/Themes/Red/login.css" rel="stylesheet" />
+    <link href="/Help/csshelp/helpcb.css" rel="stylesheet" />
+    <link href="/Help/csshelp/helpb.css" rel="stylesheet" />
+    <link href="/Help/csshelp/helpindex.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .btSpan {
+            position: relative;
+            cursor: pointer;
+            color: #0066CC;
+        }
+
+        #dynamicDiv {
+            position: absolute;
+            background-color: white;
+            display: none;
+            padding: 10px;
+            border-left: 1px whitesmoke solid;
+            border-top: 1px whitesmoke solid;
+            border-right: 1px #0066CC solid;
+            border-bottom: 1px #0066CC solid;
+        }
+
+            #dynamicDiv a {
+                color: #0066CC;
+            }
+
+        a {
+            color: #0066CC;
+        }
+    </style>
+</head>
+<script language="javascript" type="text/javascript">
+    function change_search_style(obj) {
+        var objs = ['buy_search', 'sell_search', 'products_search'];
+        for (var i = 0; i < objs.length; i++) {
+            document.getElementById(objs[i]).className = 'search_tag_b';
+        }
+        obj.className = 'search_tag_a';
+    }
+    function Init_search_style() {
+        var objs = ['buy_search', 'sell_search', 'products_search'];
+        for (var i = 0; i < objs.length; i++) {
+            document.getElementById(objs[i]).className = 'search_tag_b';
+        }
+        if (document.getElementById('_ctl0_hid_typeText')) {
+            document.getElementById(document.getElementById('_ctl0_hid_typeText').value).className = 'search_tag_a';
+        }
+    }
+    var url = "https://www.chemicalbook.com";
+    var title = "ChemicalBook--chemical search Engine";
+    function makeLink() {
+        if (document.all)
+            window.external.AddFavorite(url, title)
+    }
+</script>
+<body onload="Init_search_style();">
+    <form method="post" action="Error_En.aspx" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwMDUyNjYzMjhkZGjPg6jP0hd3qmXwZvwf8ZenbjVQVkwZyrTxBmTclESS" />
+        </div>
+
+        <div class="main_960px">
+            <div class="top_txt_bg" style="position: relative; font-family: Times New Roman">
+                <span id="NoUser" style="display:block;margin-top:1px;vertical-align:middle;margin-bottom:3px;">
+                    <a target="_blank" href="http://settings.messenger.live.com/Conversation/IMMe.aspx?invitee=7b04453cdd26b12c@apps.messenger.live.com"><font style="vertical-align: middle;" color="#ff3333">Chat Live</font></a> |
+                    <a style="color: #666; font: 13px Î¢ÈíÑÅºÚ; text-decoration: none;" href="https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101213754&redirect_uri=https://www.chemicalbook.com/qqlogin.aspx&scope=get_user_info">
+                        <img src="https://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/Connect_logo_1.png" alt="Connect_logo_1.png" style="border: none" />
+                    </a> |<a title="Login" onclick="blur()" rel="nofollow" href="/UserManager/Login_EN.aspx?Lang=CN">Log in</a> |
+                    <a rel="nofollow" onclick="blur()" href="/UserManager/Register_EN.aspx?Lang=CN">Join Free</a> |
+                    <a href="https://www.chemicalbook.com/Error/Error_En.aspx" id="TransLink2">
+                        <img id="TransImage2" src="/images/china.bmp" />
+                    </a> |
+                    <a href="/ProductIndex_JP.aspx" id="TransJapan1">
+                        <img id="TransJapanImage1" src="/images/japan.bmp" />
+                    </a> |
+                    <a href="/ProductIndex_DE.aspx" id="TransGermany1">
+                        <img id="TransGermanyImage1" src="/images/Germany.bmp" />
+                    </a>
+                </span>
+                <span id="User" style="display:none;margin-top:1px;vertical-align:middle;margin-bottom:3px;">
+                    <a target="_blank" href="http://settings.messenger.live.com/Conversation/IMMe.aspx?invitee=7b04453cdd26b12c@apps.messenger.live.com"><font style="vertical-align: middle;" color="#ff3333">Chat Live</font></a> |
+                    Welcome!  |
+                    <a title="Login" rel="nofollow" onclick="blur()" href="/UserManager/sign_out_EN.aspx">Log out</a> |
+                    <a rel="nofollow" onclick="blur()" href="/UserProfile/companyinfoManage_EN.aspx?Lang=CN">My ChemicalBook</a> |
+                    <a href="https://www.chemicalbook.com/Error/Error_En.aspx" id="TransLink">
+                        <img id="TransImage" src="/images/china.bmp" />
+                    </a> |
+                    <a href="/ProductIndex_JP.aspx" id="TransJapan2">
+                        <img id="TransJapanImage2" src="/images/japan.bmp" />
+                    </a> |
+                    <a href="/ProductIndex_DE.aspx" id="TransGermany2">
+                        <img id="TransGermanyImage2" src="/images/Germany.bmp" />
+                    </a>
+                </span>
+                <div class="pad_left_10px" id="favorites"><a href="javascript:makeLink()" class="blue" onclick="blur()">Add to Favirate</a> | <a class="blue" onclick="blur()" href="/ProductIndex_EN.aspx">HomePage</a></div>
+            </div>
+
+            <div class="logo">
+                <a href="/ProductIndex_EN.aspx">
+                    <img id="logo" src="/logo.gif" style="height:50px;width:207px;" />
+                </a>
+            </div>
+            <div class="search">
+                <div class="pad_top_btm_10px">
+                    <div class="search_left_bg"></div>
+                    <div class="search_middle_bg">
+                        <div class="search_tag">
+                            <div class="search_tag_b" id="products_search" onclick="change_search_style(this);javascript:document.getElementById('_ctl0_hid_typeText').value='products_search';">Products</div>
+                            <div class="tag_line"></div>
+                            <div class="search_tag_b" id="buy_search"><a href="/BuyingLeadList_EN.aspx">Buying Leads</a></div>
+                            <div class="tag_line"></div>
+                            <div class="search_tag_b" id="sell_search"><a href="/ChemWebSiteList_EN.aspx">Chemical site</a></div>
+                            <div class="tag_line"></div>
+                            <div class="search_tag_b" id="sell_search">
+                                <a href="/StructuredSearch_EN.htm">Structure Search</a><div style="width: 25px; height: 15px; top: -25px; left: 55px; display: block; position: relative;">
+                                    <img src="/img/new4.gif" alt="new" width="25px" height="16px" />
+                                </div>
+                            </div>
+                        </div>
+                        <input name="_ctl0:hid_typeText" type="text" value="products_search" id="hid_typeText" style="visibility: hidden; display: none;" />
+                        <div class="search_input">
+                            <div class="search_from">
+                                <input name="_ctl0:Keyword" type="text" id="Keyword" style="width:300px;" />
+                                <input type="submit" name="_ctl0:SearchBtn" value="Search" id="SearchBtn" />
+                            </div>
+                            <div id="HotKeyWordMaster" class="search_keywords"><strong>Hot Keywords: </strong><a href="/ProductChemicalPropertiesCB3763003_EN.htm">18162-48-6</a>,<a href="/ProductChemicalPropertiesCB2402488_EN.htm">872-50-4</a>,<a href="/ProductChemicalPropertiesCB0181994_EN.htm">Methylene Chloride</a>,<a href="/ProductChemicalPropertiesCB2472212_EN.htm">naphthalene</a>,<a href="/ProductChemicalPropertiesCB6852795_EN.htm">THF</a>,<a href="/ProductChemicalPropertiesCB0461627_EN.htm">Titanium Dioxide</a></div>
+                        </div>
+                    </div>
+                    <div class="search_right_bg"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div style="width: 600px; height: 200px; margin: auto; background: url(/error/images/error.gif) no-repeat  10px 5px; font: 14px Arial, Helvetica, sans-serif; line-height: 25px; padding-left: 120px; margin-top: 80px;">
+                <p style="line-height: 35px; font-size: 16px">Sorry, you have access to the page cannot be displayed or does not exist.</p>
+                1.&nbsp;Make sure the address you entered is correct.
+                <br />
+                2.&nbsp;If it is a link to jump over,please refresh the page or return to the previous page.<br />
+                3.&nbsp;Recommended visits <a href="https://www.chemicalbook.com/ProductIndex_EN.aspx" style="color: #03C; text-decoration: none">Home</a> | <a href="https://www.chemicalbook.com/BuyingLeadList_EN.aspx" style="color: #03C; text-decoration: none">Buying Leads</a> | <a href="https://www.chemicalbook.com/ChemWebSiteList_EN.aspx" style="color: #03C; text-decoration: none">Chemical site</a> | <a href="https://www.chemicalbook.com/StructuredSearch_EN.htm" style="color: #03C; text-decoration: none">Structure Search</a>
+            </div>
+
+            <div class="clear"></div>
+            <div class="foot">
+                <ul>
+                    <li class="pad_top_5px">
+                        <a rel="nofollow" href="/ProductIndex_EN.aspx">HomePage</a> |
+                        <a rel="nofollow" href="/AboutUS_EN.aspx">About Us</a> |
+                        <a rel="nofollow" href="/UserProfile/GlobalTrade/VIPInfo_Global.aspx">Member Companies</a> |
+                        <a rel="nofollow" href="/UserProfile/BuyAds_EN.aspx">Advertising</a> |
+                        <a rel="nofollow" href="/ContactUS_EN.aspx">Contact us</a> |
+                        <a rel="nofollow" href="/indexEN.aspx">Previous WebSite</a> |
+                        <a rel="nofollow" href="/ProductMSDSList_0_EN.htm">MSDS</a> |
+                        <a rel="nofollow" href="/ShowAllProductByIndexID_CAS_12_0_EN.htm">CAS Index</a>  |
+                        <a rel="nofollow" href="/CASDetailList_0_EN.htm">CAS DataBase</a>|
+                        <a rel="nofollow" href="/ProductCatalog_EN.htm">Product Catalog</a> |
+                        <a rel="nofollow" href="/Links.htm">Links</a> |
+                        <a rel="nofollow" href="/Privacy_EN.aspx">Pricacy</a> |
+                        <a rel="nofollow" href="/Terms_EN.aspx">Terms</a>
+
+                    </li>
+                    <li class="gary">Copyright &copy; 2016 ChemicalBook All rights reserved.</li>
+                </ul>
+            </div>
+            <a></a>
+        </div>
+    </form>
+    <script src="/Themes/Jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="/js/master_en.min.js" type="text/javascript"></script>
+</body>
+</html>
